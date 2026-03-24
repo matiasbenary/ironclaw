@@ -1,0 +1,28 @@
+{
+  "version": "0.1.0",
+  "wit_version": "0.3.0",
+  "http": {
+    "allowlist": [
+      {
+        "host": "geocoding-api.open-meteo.com",
+        "path_prefix": "/v1/",
+        "methods": ["GET"]
+      },
+      {
+        "host": "api.open-meteo.com",
+        "path_prefix": "/v1/",
+        "methods": ["GET"]
+      },
+      {
+        "host": "air-quality-api.open-meteo.com",
+        "path_prefix": "/v1/",
+        "methods": ["GET"]
+      }
+    ],
+    "rate_limit": {
+      "requests_per_minute": 60,
+      "requests_per_hour": 500
+    },
+    "timeout_secs": 15
+  }
+}
